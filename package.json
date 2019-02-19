@@ -13,6 +13,20 @@
     "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx}\" --write",
     "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\""
   },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/",
+    "transform": {
+      "^.+\\.jsx$": "babel-jest",
+      "^.+\\.js$": "babel-jest"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "modulePathIgnorePatterns": [
+      "__tests__/fixtures.js"
+    ]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
