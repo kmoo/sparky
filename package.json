@@ -1,0 +1,10 @@
+{
+  "name": "sparky",
+  "version": "0.0.1",
+  "description": "Simple, responsive sparklines with only Vanilla JavaScript.",
+  "main": "index.js",
+  "repository": "git@github.com:kmoo/sparky.git",
+  "author": "Luke Moorman",
+  "license": "Unlicensed",
+  "private": true
+}
