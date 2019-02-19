@@ -1,5 +1,1 @@
-function main() {
-  return 'Hello, World!';
-}
-
-module.exports = main;
+export const main = () => 'Hello, World!';
