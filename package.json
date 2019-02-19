@@ -9,12 +9,18 @@
   "private": true,
   "scripts": {
     "build": "babel src -d lib --ignore '**/*.test.js'",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx}\" --write",
+    "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\""
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
-    "jest": "^24.1.0"
+    "eslint": "5.14.1",
+    "eslint-config-prettier": "4.0.0",
+    "eslint-plugin-prettier": "3.0.1",
+    "jest": "^24.1.0",
+    "prettier": "1.16.4"
   }
 }
