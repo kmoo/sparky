@@ -5,13 +5,25 @@
     <meta charset="utf-8">
     <meta name="description" content="Example of sparky">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .sparky--accordion > svg {
+        height: 200px;
+      }
+
+      .sparky-point {
+        stroke-width: 8px;
+        stroke-linecap: square;
+        stroke: green;
+      }
+    </style>
   </head>
 <body>
-  <div id="yo"></div>
+  <div id="yo" class="sparky--accordion"></div>
   <script>var exports = {};</script>
   <script src="../lib/index.js"></script>
   <script>
-    sparky("yo");
+    sparky("yo", [1,2,2.5,3,4,5,7]);
+    console.log('ji')
   </script>
 </body>
 </html>
