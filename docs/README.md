@@ -63,4 +63,4 @@ yarn prettier
 
 ## Contributing
 
-- Reach out to @kmoo
+- Reach out to [@kmoo](https://github.com/kmoo)
