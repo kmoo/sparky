@@ -11,19 +11,22 @@
       }
 
       .sparky-point {
-        stroke-width: 8px;
-        stroke-linecap: square;
+        stroke-width: 6px;
+        stroke-linecap: round;
         stroke: green;
       }
     </style>
   </head>
 <body>
-  <div id="yo" class="sparky--accordion"></div>
+  <div id="chart" class="sparky--accordion"></div>
+  <div class="another sparky--accordion"></div>
+  <div id="third" class="sparky--accordion"></div>
   <script>var exports = {};</script>
   <script src="../lib/index.js"></script>
   <script>
-    sparky("yo", [1,2,2.5,3,4,5,7]);
-    console.log('ji')
+    sparky("chart", [1,2,2.5,3,4,5,7], { points: true });
+    sparky(".another", [1,2,2.5,3,4,5,7,10,16,17,8,9]);
+    sparky(document.getElementById("third"), [1,2,2.5]);
   </script>
 </body>
 </html>
