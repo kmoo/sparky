@@ -1,0 +1,21 @@
+@import './styles/tokens';
+
+$point-width: 6px;
+
+.sparky {
+  &--accordion {
+    svg {
+      height: 100%;
+    }
+  }
+
+  &-line {
+    stroke: black;
+  }
+
+  &-point {
+    stroke-width: $point-width;
+    stroke-linecap: round;
+    stroke: $green;
+  }
+}

@@ -1,0 +1,10 @@
+.sparky--accordion svg {
+  height: 100%; }
+
+.sparky-line {
+  stroke: black; }
+
+.sparky-point {
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke: green; }

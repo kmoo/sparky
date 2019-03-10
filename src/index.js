@@ -32,6 +32,7 @@ export const sparky = (elem, values, options = {}) => {
   svgPath.setAttribute('stroke-width', 1);
   svgPath.setAttribute('opacity', 1);
   svgPath.setAttribute('fill', 'none');
+  svgPath.setAttribute('class', 'sparky-line');
 
   svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
   svg.appendChild(svgPath);
