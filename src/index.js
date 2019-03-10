@@ -1,6 +1,6 @@
 export const main = () => 'Hello, World!';
 
-export const sparky = (elem, values) => {
+export const sparky = (elem, values, options = {}) => {
   const element = elementOrSelector(elem);
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   var svgPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
@@ -11,19 +11,20 @@ export const sparky = (elem, values) => {
   const xRange = width / values.length;
   const yRange = height / Math.max(...values);
 
-  console.log(Math.max(...values), yRange);
-
   var points = [];
   var path = '';
   values.forEach((dataPoint, index) => {
     path += (index === 0 ? 'M' : ' L') + ` ${index * xRange},${height - dataPoint * yRange}`;
-    let point = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-    point.setAttribute('x1', index * xRange);
-    point.setAttribute('y1', height - dataPoint * yRange);
-    point.setAttribute('x2', index * xRange * 1.2);
-    point.setAttribute('y2', height - dataPoint * yRange * 1.2);
-    point.setAttribute('class', 'sparky-point');
-    points.push(point);
+
+    if (options.points) {
+      let point = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+      point.setAttribute('x1', index * xRange);
+      point.setAttribute('y1', height - dataPoint * yRange);
+      point.setAttribute('x2', index * xRange + 0.01);
+      point.setAttribute('y2', height - dataPoint * yRange);
+      point.setAttribute('class', 'sparky-point');
+      points.push(point);
+    }
   });
 
   svgPath.setAttribute('d', path); //"M 1,97.857143 C 19.285714,96.428571 24.016862,131.64801 90.714286,132.85714 140.78762,133.7649 202.79376,66.16041 202.79376,66.16041");
