@@ -42,12 +42,11 @@ export const sparky = (elem, values, options = {}) => {
 };
 
 export const elementOrSelector = object => {
-  var element;
-
   if (typeof object === 'string' || object instanceof String) {
-    element = document.getElementById(object) || document.querySelector(object);
-  } else {
-    element = object;
+    return document.getElementById(object) || document.querySelector(object);
   }
-  return element;
+  // Consider adding else-if here to check for HTML Element,
+  //   otherwise, return null
+
+  return object;
 };
