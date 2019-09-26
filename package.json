@@ -12,7 +12,7 @@
     "build:js": "babel src -d lib --ignore '**/*.test.js'",
     "build": "yarn build:js && yarn build:css",
     "test": "jest --coverage",
-    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx}\" --write",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx,md}\" --write",
     "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\""
   },
   "jest": {
@@ -35,7 +35,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": [
+    "*.{js,jsx,md}": [
       "prettier --write",
       "git add"
     ]

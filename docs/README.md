@@ -8,8 +8,8 @@ Simple, responsive sparklines with only Vanilla JavaScript.
 
 #### Software
 
-* Node
-* Yarn
+- Node
+- Yarn
 
 ### Install Locally
 
@@ -36,6 +36,10 @@ yarn serve
 Navigate to the following link in a browser:
 
 http://localhost:5000/example
+
+You should see something like this! 🎉
+
+![Image of Sparky sparklines](./images/example.png)
 
 ## Running tests
 
