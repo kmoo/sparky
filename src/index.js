@@ -1,5 +1,3 @@
-export const main = () => 'Hello, World!';
-
 export const sparky = (elem, values, options = {}) => {
   const element = elementOrSelector(elem);
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
