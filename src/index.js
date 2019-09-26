@@ -18,7 +18,7 @@ export const sparky = (elem, values, options = {}) => {
       let point = document.createElementNS('http://www.w3.org/2000/svg', 'line');
       point.setAttribute('x1', index * xRange);
       point.setAttribute('y1', height - dataPoint * yRange);
-      point.setAttribute('x2', index * xRange + 0.01);
+      point.setAttribute('x2', index * xRange);
       point.setAttribute('y2', height - dataPoint * yRange);
       point.setAttribute('class', 'sparky-point');
       points.push(point);
