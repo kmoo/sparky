@@ -2,6 +2,8 @@
 
 Simple, responsive sparklines in Vanilla JavaScript. 📈
 
+![Node.js CI](https://github.com/kmoo/sparky/workflows/Node.js%20CI/badge.svg)
+
 ## Backstory 📖
 
 My goal in building this repo was not to create the perfect "Sparkline" library (see Edward Tufte's [writing on sparklines](https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR) for a brief history).
