@@ -52,6 +52,6 @@
     "lint-staged": "^10.2.11",
     "node-sass": "^4.11.0",
     "prettier": "2.0.5",
-    "serve": "^11.1.0"
+    "serve": "^11.3.2"
   }
 }
