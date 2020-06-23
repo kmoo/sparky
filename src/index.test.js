@@ -10,7 +10,7 @@ describe('elementOrSelector', () => {
     });
   });
 
-  describe('given a selelctor', () => {
+  describe('given a selector', () => {
     it('returns an element', () => {
       document.body.innerHTML = classHtml;
 

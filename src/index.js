@@ -34,14 +34,14 @@ export const sparky = (elem, values, options = {}) => {
 
   svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
   svg.appendChild(svgPath);
-  points.forEach(point => {
+  points.forEach((point) => {
     svg.appendChild(point);
   });
 
   element.appendChild(svg);
 };
 
-export const elementOrSelector = object => {
+export const elementOrSelector = (object) => {
   if (typeof object === 'string' || object instanceof String) {
     return document.getElementById(object) || document.querySelector(object);
   }

@@ -11,23 +11,9 @@
     "build:css": "node-sass src/main.scss -o lib",
     "build:js": "babel src -d lib --ignore '**/*.test.js'",
     "build": "yarn build:js && yarn build:css",
-    "test": "jest --coverage",
+    "test": "jest",
     "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx,md}\" --write",
     "lint": "eslint --ignore-path .gitignore \"**/*.{js,jsx}\""
-  },
-  "jest": {
-    "verbose": true,
-    "testURL": "http://localhost/",
-    "transform": {
-      "^.+\\.jsx$": "babel-jest",
-      "^.+\\.js$": "babel-jest"
-    },
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}"
-    ],
-    "modulePathIgnorePatterns": [
-      "__tests__/fixtures.js"
-    ]
   },
   "husky": {
     "hooks": {
@@ -41,17 +27,17 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.6.2",
-    "@babel/core": "^7.6.2",
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
     "eslint": "7.3.0",
-    "eslint-config-prettier": "6.3.0",
-    "eslint-plugin-prettier": "3.1.1",
-    "husky": "^3.0.5",
-    "jest": "^24.9.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
     "lint-staged": "^10.2.11",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.14.1",
     "prettier": "2.0.5",
-    "serve": "^11.1.0"
+    "serve": "^11.3.2"
   }
 }
