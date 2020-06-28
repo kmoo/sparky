@@ -6,6 +6,9 @@
   "repository": "git@github.com:kmoo/sparky.git",
   "author": "Luke Moorman <luke@lukemoorman.com> (https://lukemoorman.com)",
   "license": "GPL-3.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build:css": "node-sass src/main.scss -o lib",
     "build:js": "babel src -d lib --ignore '**/*.test.js'",
