@@ -1,11 +1,11 @@
 {
   "name": "sparky",
-  "version": "0.0.1",
-  "description": "Simple, responsive sparklines with only Vanilla JavaScript.",
+  "version": "0.1.0",
+  "description": " Simple, responsive sparklines in Vanilla JavaScript. 📈",
   "main": "index.js",
   "repository": "git@github.com:kmoo/sparky.git",
-  "author": "Luke Moorman",
-  "license": "Unlicensed",
+  "author": "Luke Moorman <luke@lukemoorman.com> (https://lukemoorman.com)",
+  "license": "GPL-3.0",
   "private": true,
   "scripts": {
     "build:css": "node-sass src/main.scss -o lib",
