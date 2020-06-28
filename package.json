@@ -1,5 +1,5 @@
 {
-  "name": "sparky",
+  "name": "@kmoo/sparky",
   "version": "0.1.0",
   "description": " Simple, responsive sparklines in Vanilla JavaScript. 📈",
   "main": "index.js",
